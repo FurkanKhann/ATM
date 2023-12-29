@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#biggest {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bora4.jpg);
+    background-size: cover;
+    transition: transform 0.5s ease; /* Added transition for smooth effect */
+}
+
+#main:hover #biggest{
+    transform: scale(2); /* Adjust the scale factor as needed */
+}
+#main {
+    height: 80%;
+    width: 80%;
+    background: rgba(245, 245, 245, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures that any child elements won't overflow */
+}
+#info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0 10px;
+    color: white;
+}
+#name
+{
+   
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#card{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px  10px 0px 0px;
+    
+}
+h1{
+    color: silver;
+}
+p{
+    color: silver;
+}
+#cardinner{
+    width: 550px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.323);
+    border-radius: 10px;
+    border: 2px black solid;
+    backdrop-filter: blur(1px);
+}
+#logo{
+    height: auto;
+    width: 100px;
+    mix-blend-mode: color-burn;
+    border-radius: 20px;
+}
+#upper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#cardn{
+    margin-left: auto;
+}
+#cardno{
+    margin-left: 10px;
+}
+#no{
+    margin-bottom: 5px;
+}
+#mid{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 10px;
+}
+#lower{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#l1{
+    margin:0 auto;
+}
+#l2{
+    margin:0 auto;
+}
+#tc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    #card{
+        height: auto;
+        padding: 5px 5px;
+    }
+    #main {
+        width: 90%; /* Adjusted width for smaller screens */
+        height: auto;
+    }
+    #biggest{
+        background-size: contain;
+    }
+    #name {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+    #lower{
+        flex-direction: column;
+    }
+    #cardinner{
+        height: auto;
+        padding-bottom: 5px;
+    }
+    #info{
+        flex-direction: column;
+        color: silver;
+        margin-bottom: 5px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div id="biggest">
+        
+        <div id="main">
+            <div id="card">
+                <div id="cardinner">
+                   <div id="upper">
+                        <div id="cardno">
+                        <h1>Bora Bora Bank</h1>
+                        </div>
+                        <div id="cardn">
+                        <img id="logo" src="logo.png">
+                        </div>
+                   </div>
+                   <div id="mid">
+                      <div id="no">
+                        <h1>#BBB 975 456 237</h1>
+                      </div>
+                      <div id="date">
+                        <h1>From 2023-2200</h1>
+                      </div>
+                   </div>
+                   <div id="lower">
+                      <div id="l1">
+                        <h1>SIR PIYUSH BORA</h1>
+                      </div>
+                      <div id="l2">
+                        <h1>CVV:*945</h1>
+                      </div>
+                   </div>
+                   <div id="tc">
+                    <p>Ethereum Card</p>
+                   </div>
+                </div>
+            </div>
+            <div id="info">
+                   <div id="name"> 
+                   Name: Piyush Bora
+                   </div>
+                   <div id="name"> 
+                   Card Number:#BBB 975 456 237
+                   </div>
+                   <div id="name"> 
+                    Current Balance :$8993463
+                   </div>
+                   <div id="name"> 
+                    Last Transaction:$699.00
+                   </div>
+            </div>
+
+        </div>
+       
+        
+
+    </div>
+</body>
+</html>
